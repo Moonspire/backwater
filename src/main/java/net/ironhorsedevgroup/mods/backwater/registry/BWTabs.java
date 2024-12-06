@@ -10,7 +10,7 @@ public class BWTabs {
 
 	public static void load() {
 
-		BACKWATER = new CreativeModeTab("tabtwe_survival") {
+		BACKWATER = new CreativeModeTab("tab_backwater") {
 			@Override
 			public ItemStack makeIcon() {
 				return new ItemStack(BWBlocks.WELL_TOPPER.get());

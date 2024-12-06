@@ -1,0 +1,16 @@
+{
+  "itemGroup.tab_backwater": "Backwater",
+
+  "block.backwater.well_shaft": "Well Shaft",
+  "block.backwater.well_topper": "Well Topper",
+  "block.backwater.dark_oak_rain_barrel": "Dark Oak Rain Barrel",
+  "block.backwater.oak_rain_barrel": "Oak Rain Barrel",
+  "block.backwater.birch_rain_barrel": "Birch Rain Barrel",
+  "block.backwater.spruce_rain_barrel": "Spruce Rain Barrel",
+  "block.backwater.jungle_rain_barrel": "Jungle Rain Barrel",
+  "block.backwater.acacia_rain_barrel": "Acacia Rain Barrel",
+  "block.backwater.mangrove_rain_barrel": "Mangrove Rain Barrel",
+
+  "item.backwater.salt": "Salt",
+  "item.backwater.salt_bottle": "Bottle of Salt"
+}
