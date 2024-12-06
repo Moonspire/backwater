@@ -1,0 +1,8 @@
+{
+  "parent": "backwater:custom/well_shaft_ladder",
+  "textures": {
+    "all": "backwater:blocks/wellshaftladder",
+    "particle": "backwater:blocks/wellshaftladder",
+    "0": "backwater:blocks/wellshaftladder"
+  }
+}

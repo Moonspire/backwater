@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "backwater:block/well_topper"
+    },
+    "facing=east": {
+      "model": "backwater:block/well_topper",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "backwater:block/well_topper",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "backwater:block/well_topper",
+      "y": 270
+    }
+  }
+}

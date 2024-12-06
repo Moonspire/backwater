@@ -1,0 +1,52 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "minecraft:block/sweet_berry_bush_stage0"
+    },
+    "age=1": {
+      "model": "minecraft:block/sweet_berry_bush_stage1"
+    },
+    "age=2,berry_type=amber": {
+      "model": "backwater:block/berrybush/amber2"
+    },
+    "age=3,berry_type=amber": {
+      "model": "backwater:block/berrybush/amber3"
+    },
+    "age=2,berry_type=indigo": {
+      "model": "backwater:block/berrybush/indigo2"
+    },
+    "age=3,berry_type=indigo": {
+      "model": "backwater:block/berrybush/indigo3"
+    },
+    "age=2,berry_type=jade": {
+      "model": "backwater:block/berrybush/jade2"
+    },
+    "age=3,berry_type=jade": {
+      "model": "backwater:block/berrybush/jade3"
+    },
+    "age=2,berry_type=mauve": {
+      "model": "backwater:block/berrybush/mauve2"
+    },
+    "age=3,berry_type=mauve": {
+      "model": "backwater:block/berrybush/mauve3"
+    },
+    "age=2,berry_type=russet": {
+      "model": "backwater:block/berrybush/russet2"
+    },
+    "age=3,berry_type=russet": {
+      "model": "backwater:block/berrybush/russet3"
+    },
+    "age=2,berry_type=teal": {
+      "model": "backwater:block/berrybush/teal2"
+    },
+    "age=3,berry_type=teal": {
+      "model": "backwater:block/berrybush/teal3"
+    },
+    "age=2,berry_type=vermillion": {
+      "model": "backwater:block/berrybush/vermillion2"
+    },
+    "age=3,berry_type=vermillion": {
+      "model": "backwater:block/berrybush/vermillion3"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "backwater:blocks/berries/jade_berry_bush_stage3"
+  }
+}

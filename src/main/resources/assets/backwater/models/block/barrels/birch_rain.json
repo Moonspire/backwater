@@ -1,0 +1,8 @@
+{
+  "parent": "backwater:custom/rain_barrel",
+  "textures": {
+    "all": "backwater:blocks/barrels/birchrain",
+    "particle": "backwater:blocks/barrels/birchrain",
+    "0": "backwater:blocks/barrels/birchrain"
+  }
+}
