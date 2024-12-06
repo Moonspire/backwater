@@ -1,13 +1,17 @@
 package net.ironhorsedevgroup.mods.backwater;
 
 import com.mojang.logging.LogUtils;
+import net.ironhorsedevgroup.mods.backwater.recipes.RecipeGenerator;
 import net.ironhorsedevgroup.mods.backwater.registry.BWBlockEntities;
 import net.ironhorsedevgroup.mods.backwater.registry.BWBlocks;
 import net.ironhorsedevgroup.mods.backwater.registry.BWItems;
 import net.ironhorsedevgroup.mods.backwater.registry.BWTabs;
 import net.minecraft.client.Minecraft;
+import net.minecraft.data.DataGenerator;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.data.event.GatherDataEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -52,6 +56,16 @@ public class Backwater {
     public void onServerStarting(ServerStartingEvent event) {
         // Do something when the server starts
         LOGGER.info("HELLO from server starting");
+    }
+
+    @Mod.EventBusSubscriber(modid = Backwater.MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
+    public static class DataGenerators {
+        @SubscribeEvent
+        public static void gatherData(GatherDataEvent event) {
+            DataGenerator generator = event.getGenerator();
+            ExistingFileHelper helper = event.getExistingFileHelper();
+            generator.addProvider(true, new RecipeGenerator(generator));
+        }
     }
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
