@@ -1,12 +1,17 @@
 package net.ironhorsedevgroup.mods.backwater.block;
 
+import net.ironhorsedevgroup.mods.toolshed.abstracts.AbstractFluidCollector;
 import net.ironhorsedevgroup.mods.toolshed.tools.Fluid;
 import net.ironhorsedevgroup.mods.toolshed.tools.MathUtils;
 import net.minecraft.core.BlockPos;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SimpleWaterloggedBlock;
+import net.minecraftforge.fluids.FluidStack;
+import net.minecraftforge.fml.ModList;
+import net.minecraftforge.registries.ForgeRegistries;
 
 import java.util.List;
 
@@ -31,7 +36,14 @@ public abstract class AbstractWellBlock extends AbstractFluidCollector implement
 
     @Override
     public void addFluidToBlock(Level world, BlockPos pos) {
-        Fluid.addFluid(world, pos, 1, calculateWaterAmount(world, pos));
+        if (ModList.get().isLoaded("thirst")) {
+            CompoundTag tag = new CompoundTag();
+            tag.putInt("Purity", 2);
+            FluidStack fluid = new FluidStack(ForgeRegistries.FLUIDS.getValue(getFluid()), calculateWaterAmount(world, pos), tag);
+            Fluid.addFluid(world, pos, 1, fluid);
+        } else {
+            Fluid.addFluid(world, pos, 1, calculateWaterAmount(world, pos));
+        }
     }
     
     public int calculateWaterAmount(Level world, BlockPos pos) {

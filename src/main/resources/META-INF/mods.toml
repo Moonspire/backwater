@@ -27,6 +27,6 @@ side = "BOTH"
 [[dependencies."${mod_id}"]]
 modId = "toolshed"
 mandatory = true
-versionRange = "[1.0.4,)"
+versionRange = "[1.0.5,)"
 ordering = "NONE"
 side = "BOTH"
